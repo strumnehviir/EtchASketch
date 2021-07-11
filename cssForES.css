@@ -1,0 +1,131 @@
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+body{
+    margin: 0;
+    font-family: 'Carter One', cursive;
+}
+
+#main{
+    margin: 0;
+    border: 0;
+    background-color: #3d3d3d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container{
+    width: 80vw;
+    height: 60vh;
+    background-color:#ff006b;
+    box-shadow: 20px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    justify-content: center;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#grid-box{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-gap: 0px;
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    border-width:5px;  
+    border-style:solid;
+    border-style: solid;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: #767676;
+    border-bottom-color: #767676;
+    
+  }
+  #title{
+    width: 90vw;
+    height: 10vh;
+    background-color:#ff006b;
+    box-shadow: 12px 12px;
+    transform: skewX(20deg);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#title > h1{
+    width: 100%;
+    height: 100%;
+    text-shadow: #000000;
+}
+
+#footer{
+    width: 90vw;
+    height: 10vh;
+    background-color:#ff006b;
+    box-shadow: 12px 12px;
+    transform: skewX(20deg);
+    display: flex;
+    flex-direction: row;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+}
+#footer > h3{
+    width: 100%;
+    height: 100%;
+    text-shadow: #000000;
+
+}
+.pixel{
+    border: solid;
+    border-width:1px;
+    margin:0px;
+    width: 1;
+    height: 1;
+}
+.inactive{
+    background-color: gray;
+}
+
+.colored-pixel{
+    background-color: black;
+}
+
+#reset{
+    width: 10%;
+    height: 10%;
+    background-color: #00ff94;
+    margin-right: 15%;
+    margin-left: 5%;
+    border-style: solid;
+    transform: skewX(20deg);
+    border-width: 5px;
+    box-shadow: 10px 10px;
+}
+
+#reset:hover{
+    transform: scale(1.2) skewX(20deg);
+}
+
+#reset:active{
+    background-color:#000000
+}
+
+#restart{
+    width: 100%;
+    height: 100%;
+}
